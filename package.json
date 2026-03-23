@@ -1,0 +1,17 @@
+{
+  "name": "archery-game",
+  "version": "1.0.0",
+  "description": "Two-player online archery game",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "firebase": "^10.8.0",
+    "next": "^14.2.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
