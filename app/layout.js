@@ -17,11 +17,6 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body>
-        <div id="rotate-message">
-          <div className="rotate-icon">📱</div>
-          <h2>Please Rotate Device</h2>
-          <p>This game requires landscape mode.</p>
-        </div>
         <div id="app-content">
           {children}
         </div>

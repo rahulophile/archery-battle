@@ -593,47 +593,4 @@ canvas {
   .hud-name { font-size: 0.78rem; }
 }
 
-/* Portrait Block Overlay */
-#rotate-message {
-  display: none;
-}
 
-@media screen and (orientation: portrait) and (max-width: 900px) {
-  #rotate-message {
-    display: flex;
-    position: fixed;
-    inset: 0;
-    z-index: 99999;
-    background: var(--bg);
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: var(--text);
-    text-align: center;
-    padding: 2rem;
-  }
-  #rotate-message h2 {
-    font-family: var(--font-title);
-    color: var(--accent2);
-    margin-bottom: 0.5rem;
-    font-size: 1.8rem;
-  }
-  #rotate-message p {
-    color: var(--text-dim);
-    font-size: 1rem;
-  }
-  .rotate-icon {
-    font-size: 4rem;
-    margin-bottom: 1.5rem;
-    animation: rotateDevice 2s infinite ease-in-out;
-  }
-  #app-content {
-    display: none;
-  }
-}
-
-@keyframes rotateDevice {
-  0% { transform: rotate(0deg); }
-  50% { transform: rotate(-90deg); }
-  100% { transform: rotate(-90deg); }
-}
